@@ -10,7 +10,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="mcgraw-firstFlow" doc:id="97748f96-0bb3-4df0-a6ca-dfed07ae2dd0" >
 		<http:listener doc:name="mcgrawpath" doc:id="ed26b79b-5b22-4998-ba26-59401d230abf" config-ref="HTTP_Listener_config" path="/mcgrawpath"/>
-		<logger level="INFO" doc:name="Test checkout branch" doc:id="9bb5f481-c2e3-4bff-a6aa-fbd0c8cd1f0c" />
 		<flow-ref doc:name="mcgraw-firstFlow1Ref" doc:id="d39a9ff6-9c75-41cd-8dd1-561610bff528" name="mcgraw-firstFlow1"/>
 	</flow>
 	<flow name="mcgraw-firstFlow1" doc:id="8cbcf22f-f950-4e7f-9fac-c0529a9c5948" >
