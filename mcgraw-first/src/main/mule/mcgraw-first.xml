@@ -10,7 +10,12 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="mcgraw-firstFlow" doc:id="97748f96-0bb3-4df0-a6ca-dfed07ae2dd0" >
 		<http:listener doc:name="mcgrawpath" doc:id="ed26b79b-5b22-4998-ba26-59401d230abf" config-ref="HTTP_Listener_config" path="/mcgrawpath"/>
+<<<<<<< HEAD
 		<flow-ref doc:name="mcgraw-firstFlow1Ref" doc:id="d39a9ff6-9c75-41cd-8dd1-561610bff528" name="DEV_FLOW"/>
+=======
+		<logger level="INFO" doc:name="Test checkout branch" doc:id="9bb5f481-c2e3-4bff-a6aa-fbd0c8cd1f0c" />
+		<flow-ref doc:name="mcgraw-firstFlow1Ref" doc:id="d39a9ff6-9c75-41cd-8dd1-561610bff528" name="mcgraw-firstFlow1"/>
+>>>>>>> parent of e6d1cb1 (tolto log)
 	</flow>
 	<flow name="DEV_FLOW" doc:id="93f87e22-2453-4d3a-89e5-4033ef9bf470" >
 		<logger level="INFO" doc:name="Logger" doc:id="19429dfa-df12-48c6-a055-10c9456dadba" />
