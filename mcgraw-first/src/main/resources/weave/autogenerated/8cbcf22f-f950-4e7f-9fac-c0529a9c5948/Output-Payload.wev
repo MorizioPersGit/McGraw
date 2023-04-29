@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_8cbcf22f_f950_4e7f_9fac_c0529a9c5948_Output_Payload = {| Test: String |}
+
