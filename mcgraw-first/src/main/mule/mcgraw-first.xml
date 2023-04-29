@@ -10,19 +10,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="mcgraw-firstFlow" doc:id="97748f96-0bb3-4df0-a6ca-dfed07ae2dd0" >
 		<http:listener doc:name="mcgrawpath" doc:id="ed26b79b-5b22-4998-ba26-59401d230abf" config-ref="HTTP_Listener_config" path="/mcgrawpath"/>
-		<flow-ref doc:name="mcgraw-firstFlow1Ref" doc:id="d39a9ff6-9c75-41cd-8dd1-561610bff528" name="mcgraw-firstFlow1"/>
+		<flow-ref doc:name="mcgraw-firstFlow1Ref" doc:id="d39a9ff6-9c75-41cd-8dd1-561610bff528" name="DEV_FLOW"/>
 	</flow>
-	<flow name="mcgraw-firstFlow1" doc:id="8cbcf22f-f950-4e7f-9fac-c0529a9c5948" >
-		<logger level="INFO" doc:name="Logger" doc:id="e061d821-70f2-4d59-81ca-6b48900a172a" />
-		<ee:transform doc:name="Transform Message" doc:id="78593336-50bc-411f-98a0-32ce513d435f" >
-			<ee:message >
-				<ee:set-payload ><![CDATA[%dw 2.0
-output application/json
----
-{
-	"Test": "Test1"
-}]]></ee:set-payload>
-			</ee:message>
-		</ee:transform>
+	<flow name="DEV_FLOW" doc:id="93f87e22-2453-4d3a-89e5-4033ef9bf470" >
+		<logger level="INFO" doc:name="Logger" doc:id="19429dfa-df12-48c6-a055-10c9456dadba" />
 	</flow>
 </mule>
